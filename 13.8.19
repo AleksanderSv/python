@@ -1,0 +1,8 @@
+tiсkеts_all = int(input("Введите кол-во необходимых вам билетов : "))
+tiсkеts_young = int(input("Введите кол-во билетов для людей с возрастом от 18 до 25 лет: "))
+tiсkеts_old = int(input("Введите кол-во билетов для людей с возрастом старше 25 лет: "))
+sums = tiсkеts_young + tiсkеts_old
+sums_rub = tiсkеts_young * 990 + tiсkеts_old * 1390
+if sums > 3:
+    sums_rub = sums_rub / 100 * 90
+print("итого за все билеты: ",int(sums_rub))
